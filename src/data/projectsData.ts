@@ -253,17 +253,17 @@ export const FLAGSHIP_PROJECTS: ProjectData[] = [
     ],
     architectureStack: [
       {
-        name: "Chemical Client",
+        name: "Quantum Chemistry Client",
         tech: "Flutter Web / Dart",
         description: "High-precision workstation GUI with vendored offline-capable Firebase & NGL bindings.",
       },
       {
         name: "Transition State Engine",
         tech: "PaiNN MLIP + ASE + PyTorch",
-        description: "Equivariant neural network predicting transition states, barrier heights, and vibrational modes.",
+        description: "Equivariant neural network predicting reaction transition states, barrier heights, and vibrational modes.",
       },
       {
-        name: "3D Visualization",
+        name: "3D Molecular Canvas",
         tech: "NGL.js (Pinned) + WebGL Canvas",
         description: "Local zero-CDN reaction dynamics and pharmacophore visualizer.",
       },

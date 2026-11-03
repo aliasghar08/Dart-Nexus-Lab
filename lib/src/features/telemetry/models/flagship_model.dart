@@ -17,3 +17,4 @@ class FlagshipModel {
     required this.liveUrl,
   });
 }
+

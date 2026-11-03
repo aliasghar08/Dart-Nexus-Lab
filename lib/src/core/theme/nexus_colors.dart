@@ -14,3 +14,4 @@ class NexusColors {
   static const Color transitEmerald = Color(0xFF00E599);
   static const Color crypticAmber = Color(0xFFFFB800);
 }
+
