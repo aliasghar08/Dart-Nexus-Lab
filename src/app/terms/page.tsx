@@ -64,7 +64,7 @@ export default function TermsPage() {
           <p>
             Direct technical questions, academic verifications, or independent inquiries to:
             <br />
-            <span className="font-mono text-cyan-400">contact@dartnexuslab.com</span>.
+            <span className="font-mono text-cyan-400">aliasgharinnocent@yahoo.com</span>.
           </p>
         </section>
 

@@ -100,7 +100,7 @@ export function FloatingCapsuleNav({
 
           {/* Contact / Inquire */}
           <a
-            href="mailto:contact@dartnexuslab.com"
+            href="mailto:aliasgharinnocent@yahoo.com"
             className="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-[#05070B] font-mono text-xs font-bold hover:brightness-110 transition-all shadow-[0_0_15px_rgba(0,240,255,0.35)] active:scale-95"
           >
             <span>Inquire</span>
@@ -170,7 +170,7 @@ export function FloatingCapsuleNav({
           </button>
 
           <a
-            href="mailto:contact@dartnexuslab.com"
+            href="mailto:aliasgharinnocent@yahoo.com"
             className="mt-2 py-2.5 rounded-xl bg-cyan-400 text-black text-center font-mono text-xs font-bold hover:brightness-110 transition-all"
           >
             Inquire / Direct Dispatch

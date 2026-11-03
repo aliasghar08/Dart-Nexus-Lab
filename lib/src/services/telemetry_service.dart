@@ -37,9 +37,9 @@ class TelemetryService {
         title: 'BlockGuard',
         codeName: 'BLOCKGUARD-SEPOLIA-NFC',
         tagline: 'Forensic Pharma Anti-Counterfeiting Platform',
-        status: 'HARDWARE ANCHORED',
+        status: 'AWAITING API',
         errorRate: 'AES-128 CMAC Verified',
-        liveUrl: 'https://dartnexuslab.com',
+        liveUrl: 'https://play.google.com/store/apps/details?id=com.dartnexus.anticounterfeit',
       ),
     ];
   }

@@ -64,7 +64,7 @@ export default function PrivacyPage() {
           <p>
             For compliance questions or data deletion requests, direct correspondence to:
             <br />
-            <span className="font-mono text-cyan-400">privacy@dartnexuslab.com</span> or <span className="font-mono text-cyan-400">contact@dartnexuslab.com</span>.
+            <span className="font-mono text-cyan-400">aliasgharinnocent@yahoo.com</span>.
           </p>
         </section>
 

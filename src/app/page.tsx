@@ -100,11 +100,11 @@ export default function HomePage() {
               </a>
 
               <a
-                href="mailto:contact@dartnexuslab.com"
+                href="mailto:aliasgharinnocent@yahoo.com"
                 className="hover:text-[#00F0FF] transition-colors flex items-center gap-1"
               >
                 <Mail className="h-4 w-4" />
-                <span>contact@dartnexuslab.com</span>
+                <span>aliasgharinnocent@yahoo.com</span>
               </a>
 
               <a
