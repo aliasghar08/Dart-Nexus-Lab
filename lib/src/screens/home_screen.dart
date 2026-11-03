@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:dart_nexus_lab/src/core/theme/nexus_colors.dart';
-import 'package:dart_nexus_lab/src/features/telemetry/services/telemetry_service.dart';
-import 'package:dart_nexus_lab/src/features/home/presentation/widgets/flagship_card_widget.dart';
-import 'package:dart_nexus_lab/src/features/home/presentation/widgets/glass_container.dart';
+import 'package:dart_nexus_lab/src/theme/nexus_colors.dart';
+import 'package:dart_nexus_lab/src/services/telemetry_service.dart';
+import 'package:dart_nexus_lab/src/widgets/flagship_card_widget.dart';
+import 'package:dart_nexus_lab/src/widgets/glass_container.dart';
 
 class HomeScreen extends StatelessWidget {
   final TelemetryService telemetryService;

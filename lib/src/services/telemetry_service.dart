@@ -28,7 +28,7 @@ class TelemetryService {
         title: 'Quantum Forge',
         codeName: 'QFORGE-TS-MLIP',
         tagline: 'Transition State MLIP & Quantum Chemistry Workstation',
-        status: 'LIVE • WEB WORKSTATION',
+        status: 'LIVE • QUANTUMFORGEAPP.COM',
         errorRate: 'ΔE < 1e-5 eV Verlet',
         liveUrl: 'https://quantumforgeapp.com/',
       ),
@@ -44,4 +44,3 @@ class TelemetryService {
     ];
   }
 }
-

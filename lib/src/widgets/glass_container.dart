@@ -1,6 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:dart_nexus_lab/src/core/theme/nexus_colors.dart';
+import 'package:dart_nexus_lab/src/theme/nexus_colors.dart';
 
 class GlassContainer extends StatelessWidget {
   final Widget child;

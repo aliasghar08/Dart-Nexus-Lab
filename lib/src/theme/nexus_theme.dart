@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'nexus_colors.dart';
+import 'package:dart_nexus_lab/src/theme/nexus_colors.dart';
 
 class NexusTheme {
   NexusTheme._();
@@ -18,4 +18,3 @@ class NexusTheme {
     );
   }
 }
-

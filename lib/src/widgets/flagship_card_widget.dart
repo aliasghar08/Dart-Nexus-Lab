@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:dart_nexus_lab/src/features/telemetry/models/flagship_model.dart';
+import 'package:dart_nexus_lab/src/models/flagship_model.dart';
 import 'glass_container.dart';
 
 class FlagshipCardWidget extends StatelessWidget {

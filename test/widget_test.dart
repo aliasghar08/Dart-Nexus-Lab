@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:dart_nexus_lab/src/features/home/presentation/screens/home_screen.dart';
-import 'package:dart_nexus_lab/src/core/theme/nexus_theme.dart';
+import 'package:dart_nexus_lab/src/screens/home_screen.dart';
+import 'package:dart_nexus_lab/src/theme/nexus_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {

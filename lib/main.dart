@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
-import 'src/core/theme/nexus_theme.dart';
-import 'src/features/home/presentation/screens/home_screen.dart';
+import 'src/theme/nexus_theme.dart';
+import 'src/screens/home_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
