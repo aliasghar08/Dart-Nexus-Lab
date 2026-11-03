@@ -20,7 +20,7 @@ export function EngineeringManifesto() {
       icon: Cpu,
       color: "#00E599",
       tagline: "Sub-millisecond graph and regression surrogates in local runtime.",
-      body: "We do not introduce blocking cloud roundtrips for evaluation that belongs on silicon. Our Message Passing Neural Networks (MPNNs) and fare estimators are compiled to PyTorch Geometric, ONNX, and TensorFlow Lite Micro—executing in under 1.85 milliseconds directly on Apple Metal Performance Shaders (MPS) and mobile Neural Processing Units.",
+      body: "Ali Asghar designs every neural surrogate to avoid blocking cloud roundtrips. Message Passing Neural Networks (MPNNs) and fare estimators are compiled directly to PyTorch Geometric, ONNX, and TensorFlow Lite Micro—executing in under 1.85 milliseconds directly on Apple Metal Performance Shaders (MPS) and mobile Neural Processing Units.",
     },
     {
       num: "03",
@@ -28,7 +28,7 @@ export function EngineeringManifesto() {
       icon: ShieldCheck,
       color: "#FFB800",
       tagline: "Silicon-anchored keys and immutable dynamic signatures.",
-      body: "Software alone cannot assert physical truth. We anchor critical pharmaceutical and financial interactions to hardware roots of trust: NXP NTAG 424 DNA dynamic cryptographic NFC chips issuing rolling AES-128 CMAC authentications, paired with Android StrongBox Keystores and immutable Sepolia Ethereum transaction receipts.",
+      body: "Software alone cannot assert physical truth. Critical pharmaceutical and financial interactions are anchored to hardware roots of trust: NXP NTAG 424 DNA dynamic cryptographic NFC chips issuing rolling AES-128 CMAC authentications, paired with Android StrongBox Keystores and immutable Sepolia Ethereum transaction receipts.",
     },
   ];
 
@@ -37,13 +37,13 @@ export function EngineeringManifesto() {
       <div className="text-center max-w-3xl mx-auto mb-16">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 font-mono text-[11px] text-zinc-400 mb-4">
           <Terminal className="h-3.5 w-3.5 text-[#00F0FF]" />
-          <span>ENGINEERING MANIFESTO • ZERO WRAPPER SYNDROME</span>
+          <span>SOLO ENGINEERING MANIFESTO • ZERO WRAPPER SYNDROME</span>
         </div>
         <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-          Why We Reject The &ldquo;Wrapper AI&rdquo; Illusion
+          Rejecting The &ldquo;Wrapper AI&rdquo; Illusion
         </h2>
         <p className="mt-4 text-zinc-400 text-sm sm:text-base leading-relaxed">
-          The industry is saturated with fragile prompt-wrappers that collapse under real-world tolerances. Dart Nexus Lab builds software anchored in non-negotiable physical laws, closed-loop mathematics, and cryptographic certainty.
+          The industry is saturated with fragile prompt-wrappers that collapse under real-world tolerances. As an independent solo engineer, Ali Asghar architects software anchored in non-negotiable physical laws, closed-loop mathematics, and cryptographic certainty—with 100% independent ownership and zero external investor or institutional compromise.
         </p>
       </div>
 

@@ -38,7 +38,7 @@ export default function PrivacyPage() {
             1. Zero-Surveillance Philosophy
           </h2>
           <p>
-            Dart Nexus Lab is architected on deterministic client-side execution. We explicitly reject intrusive tracking pixels, third-party analytics telemetry, biometric aggregation, or commercial data broking. All engineering models (Structura Nexus, Swift Ride, Quantum Forge) execute either in pure sandboxed client runtimes or ephemeral edge microkernels.
+            Dart Nexus Lab is independently developed and maintained solely by Ali Asghar without external funding, investors, or corporate affiliations. It is architected strictly on deterministic client-side execution. Intrusive tracking pixels, third-party analytics telemetry, biometric aggregation, or commercial data broking are completely rejected. All engineering models (Structura Nexus, Swift Ride, Quantum Forge) execute either in pure sandboxed client runtimes or ephemeral edge microkernels.
           </p>
 
           <h2 className="text-lg font-bold text-white font-mono flex items-center gap-2 mt-8">
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
             2. Mobility & Spatial Data Handling (Swift Ride)
           </h2>
           <p>
-            Swift Ride utilizes Uber H3 hexagonal spatial indexing at resolution 9 (100m radius). Driver-passenger coordinates are processed ephemerally during active rides. We retain 0.0% of raw passenger transit trails once rides are completed and cryptographically settled into the driver&apos;s local Khata ledger.
+            Swift Ride utilizes Uber H3 hexagonal spatial indexing at resolution 9 (100m radius). Driver-passenger coordinates are processed ephemerally during active rides. Zero percent (0.0%) of raw passenger transit trails are retained once rides are completed and cryptographically settled into the driver&apos;s local Khata ledger.
           </p>
 
           <h2 className="text-lg font-bold text-white font-mono flex items-center gap-2 mt-8">

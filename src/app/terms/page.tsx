@@ -38,7 +38,7 @@ export default function TermsPage() {
             1. Core IP & Algorithmic Ownership
           </h2>
           <p>
-            All mathematical models, Direct Stiffness Matrix (DSM) solver source logic, PaiNN equivariant neural committee training routines, and NTAG 424 cryptographic handshake implementations hosted under the `com.dartnexuslab` namespace are authored and owned by Ali Asghar, unless explicitly distributed under specific open-source licenses (MIT/Apache 2.0).
+            Dart Nexus Lab is 100% self-funded and independently architected. All mathematical models, Direct Stiffness Matrix (DSM) solver source logic, PaiNN equivariant neural committee training routines, and NTAG 424 cryptographic handshake implementations hosted under the `com.dartnexuslab` namespace are independently developed and owned solely by Ali Asghar, with zero external corporate ownership, venture capital, or external funding influence.
           </p>
 
           <h2 className="text-lg font-bold text-white font-mono flex items-center gap-2 mt-8">
@@ -54,15 +54,15 @@ export default function TermsPage() {
             3. Open Source & Peer-to-Peer Rights (Swift Ride)
           </h2>
           <p>
-            Swift Ride is committed to zero platform fees (0.0% take-rate). Driver-partners retain full sovereignty over their vehicles, passenger agreements, and cash ledgers.
+            Swift Ride is committed to zero platform fees (0.0% take-rate). Independent drivers retain full sovereignty over their vehicles, passenger agreements, and cash ledgers.
           </p>
 
           <h2 className="text-lg font-bold text-white font-mono flex items-center gap-2 mt-8">
             <CheckCircle2 className="h-4 w-4 text-[#00F0FF]" />
-            4. Inquiries & Licensing Requests
+            4. Inquiries & Technical Contact
           </h2>
           <p>
-            Direct institutional partnerships, academic verifications, or enterprise deployments to:
+            Direct technical questions, academic verifications, or independent inquiries to:
             <br />
             <span className="font-mono text-cyan-400">contact@dartnexuslab.com</span>.
           </p>

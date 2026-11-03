@@ -140,8 +140,8 @@ export function LabTerminalDrawer({ isOpen, onClose }: LabTerminalDrawerProps) {
           type: "output",
           content: (
             <div className="text-xs space-y-1 text-zinc-300 italic">
-              <p className="text-[#00F0FF] font-bold not-italic">THE DART NEXUS LAB ENGINEERING CREED:</p>
-              <p>&quot;We reject hallucinating wrappers. Real intelligence begins when code respects finite element equilibrium, stoichiometric mass conservation, and cryptographic invariance.&quot;</p>
+              <p className="text-[#00F0FF] font-bold not-italic">THE DART NEXUS LAB INDEPENDENT CREED:</p>
+              <p>&quot;I reject hallucinating wrappers. Real intelligence begins when code respects finite element equilibrium, stoichiometric mass conservation, and cryptographic invariance.&quot;</p>
             </div>
           ),
         });
