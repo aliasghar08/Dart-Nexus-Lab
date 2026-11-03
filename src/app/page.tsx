@@ -1,101 +1,139 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import React, { useState } from "react";
+import { CyberGridBackground } from "@/components/canvas/CyberGridBackground";
+import { ParticleField } from "@/components/canvas/ParticleField";
+import { FloatingCapsuleNav } from "@/components/navigation/FloatingCapsuleNav";
+import { LabTerminalDrawer } from "@/components/navigation/LabTerminalDrawer";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { FlagshipBentoGrid } from "@/components/sections/FlagshipBentoGrid";
+import { EcosystemDrawer } from "@/components/sections/EcosystemDrawer";
+import { EngineeringManifesto } from "@/components/sections/EngineeringManifesto";
+import { LabTelemetryStrip } from "@/components/sections/LabTelemetryStrip";
+import { ProjectDetailModal } from "@/components/ui/ProjectDetailModal";
+import { ProjectData } from "@/data/projectsData";
+import { Mail } from "lucide-react";
+import { GithubIcon } from "@/components/ui/GithubIcon";
+
+export default function HomePage() {
+  const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
+  const [isTerminalOpen, setIsTerminalOpen] = useState(false);
+  const [isEcosystemOpen, setIsEcosystemOpen] = useState(false);
+
+  const handleExploreSystems = () => {
+    const el = document.getElementById("flagship-systems");
+    el?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="relative min-h-screen bg-[#05070B] text-white overflow-hidden">
+      {/* Dynamic 3D WebGL Mathematical Mesh Canvas */}
+      <CyberGridBackground />
+      <ParticleField />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      {/* Top visionOS Suspended Glass Capsule Navbar */}
+      <FloatingCapsuleNav
+        onOpenTerminal={() => setIsTerminalOpen(true)}
+        onOpenEcosystem={() => setIsEcosystemOpen(true)}
+      />
+
+      {/* Master Viewport Sections */}
+      <div className="relative z-10 flex flex-col">
+        {/* Hero Workstation */}
+        <HeroSection
+          onOpenTerminal={() => setIsTerminalOpen(true)}
+          onExploreSystems={handleExploreSystems}
+        />
+
+        {/* Live Lab Telemetry Strip */}
+        <LabTelemetryStrip />
+
+        {/* Tier-1 Flagship Asymmetric Bento Grid */}
+        <FlagshipBentoGrid onSelectProject={(p) => setSelectedProject(p)} />
+
+        {/* Engineering Philosophy Manifesto */}
+        <EngineeringManifesto />
+
+        {/* Executive Terminal Drawer Modal */}
+        <LabTerminalDrawer
+          isOpen={isTerminalOpen}
+          onClose={() => setIsTerminalOpen(false)}
+        />
+
+        {/* Secondary Ecosystem Slide-Out Drawer */}
+        <EcosystemDrawer
+          isOpen={isEcosystemOpen}
+          onClose={() => setIsEcosystemOpen(false)}
+        />
+
+        {/* Deep-Dive Project Detail Modal */}
+        <ProjectDetailModal
+          project={selectedProject}
+          isOpen={!!selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+
+        {/* Production Footer & Disclosures */}
+        <footer className="mt-20 border-t border-white/10 bg-[#06090E] py-14 px-4 text-xs font-mono text-zinc-400">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="space-y-2 text-center md:text-left">
+              <div className="flex items-center justify-center md:justify-start gap-2 text-white font-bold tracking-tight">
+                <span className="text-[#00F0FF]">Δ</span>
+                <span>DART NEXUS LAB</span>
+                <span className="text-zinc-600">/</span>
+                <span className="text-zinc-400 font-normal">com.dartnexuslab</span>
+              </div>
+              <p className="text-zinc-500 text-[11px] max-w-md">
+                Engineered by <strong className="text-zinc-300">Ali Asghar</strong> (Lead Architect). Built on deterministic mathematics, edge neural execution, and hardware trust roots.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-6 text-zinc-300">
+              <a
+                href="https://github.com/aliasghar08"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-[#00F0FF] transition-colors flex items-center gap-1.5"
+              >
+                <GithubIcon className="h-4 w-4" />
+                <span>GitHub @aliasghar08</span>
+              </a>
+
+              <a
+                href="mailto:contact@dartnexuslab.com"
+                className="hover:text-[#00F0FF] transition-colors flex items-center gap-1"
+              >
+                <Mail className="h-4 w-4" />
+                <span>contact@dartnexuslab.com</span>
+              </a>
+
+              <a
+                href="/privacy"
+                className="hover:text-white transition-colors"
+              >
+                Privacy Compliance
+              </a>
+
+              <a
+                href="/terms"
+                className="hover:text-white transition-colors"
+              >
+                Terms of IP
+              </a>
+            </div>
+          </div>
+
+          <div className="max-w-6xl mx-auto mt-8 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3 text-zinc-600 text-[10px]">
+            <div>
+              © 2026 Dart Nexus Lab. All sovereign engineering assets and benchmarks reserved.
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+              <span>HOSTED ON FIREBASE CDN (dart-nexus-lab)</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
   );
 }
