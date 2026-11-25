@@ -28,7 +28,7 @@ export function FloatingCapsuleNav({
     { label: "Systems", href: "#flagship-systems" },
     { label: "Manifesto", href: "#philosophy" },
     { label: "Telemetry", href: "#diagnostics" },
-    { label: "Research", href: "https://github.com/aliasghar08", external: true },
+    { label: "GitHub", href: "https://github.com/aliasghar08/Dart-Nexus-Lab", external: true },
   ];
 
   return (

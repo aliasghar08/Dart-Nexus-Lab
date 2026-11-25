@@ -359,8 +359,8 @@ export const FLAGSHIP_PROJECTS: ProjectData[] = [
     verificationEvidence:
       "Stress tested against cloned static NFC tags, simulated DataMatrix print attacks, and duplicated packaging with 100.0% counterfeit detection rate.",
     links: {
-      liveUrl: "https://dartnexuslab.com",
-      repoUrl: "https://github.com/aliasghar08",
+      liveUrl: "https://play.google.com/store/apps/details?id=com.dartnexus.anticounterfeit",
+      repoUrl: "https://github.com/aliasghar08/Dart-Nexus-Lab",
       docsUrl: "https://gemini.google.com/notebook/bfb247b2-de8f-410c-95bf-85c6a0aee178",
     },
     featured: true,

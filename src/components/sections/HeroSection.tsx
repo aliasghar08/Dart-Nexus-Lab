@@ -52,12 +52,12 @@ export function HeroSection({ onOpenTerminal, onExploreSystems }: HeroSectionPro
           </button>
 
           <a
-            href="https://github.com/aliasghar08"
+            href="https://github.com/aliasghar08/Dart-Nexus-Lab"
             target="_blank"
             rel="noreferrer"
             className="px-6 py-3 rounded-xl glass-pod border border-white/10 hover:border-white/20 text-white font-mono text-xs sm:text-sm font-medium transition-all hover:bg-white/[0.08] active:scale-95 flex items-center gap-2"
           >
-            <span>Engineering Repositories</span>
+            <span>Engineering Repository</span>
             <ExternalLink className="h-3.5 w-3.5 text-zinc-400" />
           </a>
 
