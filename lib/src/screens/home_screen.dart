@@ -20,6 +20,7 @@ class HomeScreen extends StatelessWidget {
       NexusColors.transitEmerald,
       const Color(0xFF0284C7),
       NexusColors.crypticAmber,
+      NexusColors.quantumViolet,
     ];
 
     return Scaffold(

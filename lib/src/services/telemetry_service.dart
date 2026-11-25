@@ -41,6 +41,15 @@ class TelemetryService {
         errorRate: 'AES-128 CMAC Verified',
         liveUrl: 'https://play.google.com/store/apps/details?id=com.dartnexus.anticounterfeit',
       ),
+      FlagshipModel(
+        id: 'medday-flow',
+        title: 'MedDay Flow',
+        codeName: 'MEDDAY-FLOW-CLINIC',
+        tagline: 'Automated Hospital Scheduling & Clinical Workflow',
+        status: 'APPLE APP STORE',
+        errorRate: '100% Collision-Free',
+        liveUrl: 'https://apps.apple.com/pk/app/medday-flow/id6817110679',
+      ),
     ];
   }
 }

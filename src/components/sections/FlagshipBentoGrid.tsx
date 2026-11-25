@@ -10,7 +10,7 @@ interface FlagshipBentoGridProps {
 }
 
 export function FlagshipBentoGrid({ onSelectProject }: FlagshipBentoGridProps) {
-  const [structura, swiftRide, quantumForge, blockGuard] = FLAGSHIP_PROJECTS;
+  const [structura, swiftRide, quantumForge, medDayFlow] = FLAGSHIP_PROJECTS;
 
   return (
     <section id="flagship-systems" className="relative py-20 px-4 max-w-6xl mx-auto scroll-mt-24">
@@ -193,54 +193,54 @@ export function FlagshipBentoGrid({ onSelectProject }: FlagshipBentoGridProps) {
           </GlassCard>
         </div>
 
-        {/* Card 4: BlockGuard (Col Span 7) */}
+        {/* Card 4: MedDay Flow (Col Span 7) */}
         <div className="md:col-span-7">
           <GlassCard
-            accentGlow="amber"
-            onClick={() => onSelectProject(blockGuard)}
+            accentGlow="violet"
+            onClick={() => onSelectProject(medDayFlow)}
             className="h-full flex flex-col justify-between group p-6 sm:p-8"
           >
             <div>
               <div className="flex items-center justify-between gap-2 mb-4">
-                <span className="px-2.5 py-1 rounded-full font-mono text-[11px] font-semibold tracking-wider text-[#FFB800] bg-amber-500/10 border border-amber-500/30">
-                  {blockGuard.badgeText}
+                <span className="px-2.5 py-1 rounded-full font-mono text-[11px] font-semibold tracking-wider text-[#A78BFA] bg-purple-500/10 border border-purple-500/30">
+                  {medDayFlow.badgeText}
                 </span>
                 <span className="font-mono text-[11px] text-zinc-500">
-                  {blockGuard.codeName}
+                  {medDayFlow.codeName}
                 </span>
               </div>
 
-              <h3 className="text-2xl sm:text-3xl font-bold text-white group-hover:text-[#FFB800] transition-colors">
-                {blockGuard.title}
+              <h3 className="text-2xl sm:text-3xl font-bold text-white group-hover:text-[#A78BFA] transition-colors">
+                {medDayFlow.title}
               </h3>
               <p className="text-xs sm:text-sm text-zinc-300 font-mono mt-1">
-                {blockGuard.tagline}
+                {medDayFlow.tagline}
               </p>
 
               <p className="mt-4 text-xs sm:text-sm text-zinc-400 leading-relaxed">
-                {blockGuard.summary}
+                {medDayFlow.summary}
               </p>
 
               {/* Core Feature Matrix */}
               <div className="mt-6 grid grid-cols-2 gap-2 font-mono text-xs text-zinc-300">
                 <div className="p-2.5 rounded-lg bg-black/40 border border-white/5">
-                  <div className="text-[#FFB800] font-bold">5-Way Forensic Check</div>
-                  <div className="text-[10px] text-zinc-500">GS1 + OCR + NFC SUN + Sepolia</div>
+                  <div className="text-[#A78BFA] font-bold">100% Collision-Free</div>
+                  <div className="text-[10px] text-zinc-500">Deterministic shift solver</div>
                 </div>
                 <div className="p-2.5 rounded-lg bg-black/40 border border-white/5">
-                  <div className="text-cyan-300 font-bold">NXP NTAG 424 DNA</div>
-                  <div className="text-[10px] text-zinc-500">Dynamic rolling AES-128 CMAC</div>
+                  <div className="text-emerald-400 font-bold">Apple App Store</div>
+                  <div className="text-[10px] text-zinc-500">Live native iOS production</div>
                 </div>
               </div>
             </div>
 
             <div className="mt-8 pt-4 border-t border-white/10 flex items-center justify-between">
               <span className="font-mono text-xs text-zinc-400 group-hover:text-white transition-colors flex items-center gap-1.5">
-                Inspect Hardware-Blockchain Spec
-                <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform text-[#FFB800]" />
+                Inspect Clinical Workflow
+                <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform text-[#A78BFA]" />
               </span>
-              <span className="font-mono text-[10px] text-[#FFB800] bg-amber-500/10 px-2.5 py-1 rounded border border-amber-500/30 flex items-center gap-1">
-                <span>GOOGLE PLAY</span>
+              <span className="font-mono text-[10px] text-white bg-white/10 px-2.5 py-1 rounded border border-white/20 flex items-center gap-1">
+                <span>APP STORE</span>
               </span>
             </div>
           </GlassCard>
