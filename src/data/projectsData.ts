@@ -45,6 +45,7 @@ export interface EcosystemProject {
   tech: string[];
   status: string;
   iconName: string;
+  repoUrl?: string;
   liveUrl?: string;
   appStoreUrl?: string;
   playStoreUrl?: string;
@@ -124,7 +125,7 @@ export const FLAGSHIP_PROJECTS: ProjectData[] = [
       "All benchmark solutions tested against analytical solutions in 'Mechanics of Materials' (R.C. Hibbeler) and SAP2000 results with zero deviation within IEEE 754 double precision limits.",
     links: {
       liveUrl: "https://structura-nexus.web.app",
-      repoUrl: "https://github.com/aliasghar08/Dart-Nexus-Lab",
+      repoUrl: "https://github.com/aliasghar08/Structura-Nexus",
       docsUrl: "https://gemini.google.com/notebook/2f8d45db-dbe3-49b8-96c6-cd5926b7e76b",
     },
     featured: true,
@@ -203,7 +204,7 @@ export const FLAGSHIP_PROJECTS: ProjectData[] = [
       "Field validated across 1,000+ simulated and live urban commute routes, ensuring 100% adherence to driver operational breakeven constraints.",
     links: {
       liveUrl: "https://play.google.com/store/apps/details?id=com.dartnexuslab.swiftride",
-      repoUrl: "https://github.com/aliasghar08/Dart-Nexus-Lab",
+      repoUrl: "https://github.com/aliasghar08/Swift-Ride",
       docsUrl: "https://gemini.google.com/notebook/a7a44ed4-984a-45e9-86f1-c100e0a9a5dd",
     },
     featured: true,
@@ -282,7 +283,7 @@ export const FLAGSHIP_PROJECTS: ProjectData[] = [
       "Benchmarked on medicinal reaction libraries and standard organic transition state datasets; energy conservation verified to ΔE < 1e-5 eV over 100,000 Verlet simulation steps.",
     links: {
       liveUrl: "https://quantumforgeapp.com/",
-      repoUrl: "https://github.com/aliasghar08/Dart-Nexus-Lab",
+      repoUrl: "https://github.com/aliasghar08/Quantum-Forge",
       docsUrl: "https://gemini.google.com/notebook/e26860cf-9088-43ef-913b-d8f01430f6dc",
     },
     featured: true,
@@ -360,7 +361,7 @@ export const FLAGSHIP_PROJECTS: ProjectData[] = [
       "Stress tested against cloned static NFC tags, simulated DataMatrix print attacks, and duplicated packaging with 100.0% counterfeit detection rate.",
     links: {
       liveUrl: "https://play.google.com/store/apps/details?id=com.dartnexus.anticounterfeit",
-      repoUrl: "https://github.com/aliasghar08/Dart-Nexus-Lab",
+      repoUrl: "https://github.com/aliasghar08/BlockGuard",
       docsUrl: "https://gemini.google.com/notebook/bfb247b2-de8f-410c-95bf-85c6a0aee178",
     },
     featured: true,
@@ -379,6 +380,7 @@ export const ECOSYSTEM_PROJECTS: EcosystemProject[] = [
     tech: ["Flutter Desktop", "SQLite", "Firebase Realtime", "ESC/POS"],
     status: "Production Ready",
     iconName: "Store",
+    repoUrl: "https://github.com/aliasghar08/Point-of-Sale-in-flutter",
   },
   {
     id: "medday-flow",
@@ -392,6 +394,7 @@ export const ECOSYSTEM_PROJECTS: EcosystemProject[] = [
     status: "Live on App Store",
     iconName: "CalendarClock",
     appStoreUrl: "https://apps.apple.com/pk/app/medday-flow/id6817110679",
+    repoUrl: "https://github.com/aliasghar08/MedDay-Flow",
   },
   {
     id: "smart-roll",
@@ -404,6 +407,7 @@ export const ECOSYSTEM_PROJECTS: EcosystemProject[] = [
     tech: ["Flutter Mobile", "TensorFlow Lite", "On-device Biometrics"],
     status: "Operational",
     iconName: "UserCheck",
+    repoUrl: "https://github.com/aliasghar08/qr-attendence-app-in-flutter",
   },
   {
     id: "omnipilot",
@@ -416,6 +420,7 @@ export const ECOSYSTEM_PROJECTS: EcosystemProject[] = [
     tech: ["Dart CLI", "Rust FFI", "OS Subprocess Control"],
     status: "Active Release",
     iconName: "Cpu",
+    repoUrl: "https://github.com/aliasghar08/OmniPilot",
   },
   {
     id: "my-health",

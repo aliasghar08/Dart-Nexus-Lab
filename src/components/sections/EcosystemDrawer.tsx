@@ -99,6 +99,17 @@ export function EcosystemDrawer({ isOpen, onClose }: EcosystemDrawerProps) {
                     {project.metrics}
                   </span>
                   <div className="flex items-center gap-2">
+                    {project.repoUrl && (
+                      <a
+                        href={project.repoUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded bg-white/5 border border-white/10 text-zinc-300 hover:text-white transition-colors"
+                      >
+                        <span>GitHub</span>
+                        <ArrowUpRight className="h-3 w-3" />
+                      </a>
+                    )}
                     {project.appStoreUrl && (
                       <a
                         href={project.appStoreUrl}
