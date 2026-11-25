@@ -90,13 +90,13 @@ export default function HomePage() {
 
             <div className="flex flex-wrap items-center justify-center gap-6 text-zinc-300">
               <a
-                href="https://github.com/aliasghar08"
+                href="https://github.com/aliasghar08/Dart-Nexus-Lab"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-[#00F0FF] transition-colors flex items-center gap-1.5"
               >
                 <GithubIcon className="h-4 w-4" />
-                <span>GitHub @aliasghar08</span>
+                <span>GitHub Repository</span>
               </a>
 
               <a

@@ -154,7 +154,7 @@ export function LabTerminalDrawer({ isOpen, onClose }: LabTerminalDrawerProps) {
           content: (
             <div className="text-xs text-zinc-300">
               <p className="font-bold text-white">Lead Architect: Ali Asghar</p>
-              <p>GitHub: <a href="https://github.com/aliasghar08" target="_blank" rel="noreferrer" className="text-[#00F0FF] underline">github.com/aliasghar08</a></p>
+              <p>GitHub: <a href="https://github.com/aliasghar08/Dart-Nexus-Lab" target="_blank" rel="noreferrer" className="text-[#00F0FF] underline">github.com/aliasghar08/Dart-Nexus-Lab</a></p>
               <p>Focus: Deterministic Mechanics • Edge Neural Inference • Cryptographic Supply-Chain</p>
             </div>
           ),

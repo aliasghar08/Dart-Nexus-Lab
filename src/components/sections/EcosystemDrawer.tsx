@@ -137,7 +137,7 @@ export function EcosystemDrawer({ isOpen, onClose }: EcosystemDrawerProps) {
             6 Specialized Ecosystem Platforms
           </span>
           <a
-            href="https://github.com/aliasghar08"
+            href="https://github.com/aliasghar08/Dart-Nexus-Lab"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-1.5 font-mono text-xs text-[#00F0FF] hover:underline"

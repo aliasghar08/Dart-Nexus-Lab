@@ -124,7 +124,7 @@ export const FLAGSHIP_PROJECTS: ProjectData[] = [
       "All benchmark solutions tested against analytical solutions in 'Mechanics of Materials' (R.C. Hibbeler) and SAP2000 results with zero deviation within IEEE 754 double precision limits.",
     links: {
       liveUrl: "https://structura-nexus.web.app",
-      repoUrl: "https://github.com/aliasghar08",
+      repoUrl: "https://github.com/aliasghar08/Dart-Nexus-Lab",
       docsUrl: "https://gemini.google.com/notebook/2f8d45db-dbe3-49b8-96c6-cd5926b7e76b",
     },
     featured: true,
@@ -203,7 +203,7 @@ export const FLAGSHIP_PROJECTS: ProjectData[] = [
       "Field validated across 1,000+ simulated and live urban commute routes, ensuring 100% adherence to driver operational breakeven constraints.",
     links: {
       liveUrl: "https://play.google.com/store/apps/details?id=com.dartnexuslab.swiftride",
-      repoUrl: "https://github.com/aliasghar08",
+      repoUrl: "https://github.com/aliasghar08/Dart-Nexus-Lab",
       docsUrl: "https://gemini.google.com/notebook/a7a44ed4-984a-45e9-86f1-c100e0a9a5dd",
     },
     featured: true,
@@ -282,7 +282,7 @@ export const FLAGSHIP_PROJECTS: ProjectData[] = [
       "Benchmarked on medicinal reaction libraries and standard organic transition state datasets; energy conservation verified to ΔE < 1e-5 eV over 100,000 Verlet simulation steps.",
     links: {
       liveUrl: "https://quantumforgeapp.com/",
-      repoUrl: "https://github.com/aliasghar08",
+      repoUrl: "https://github.com/aliasghar08/Dart-Nexus-Lab",
       docsUrl: "https://gemini.google.com/notebook/e26860cf-9088-43ef-913b-d8f01430f6dc",
     },
     featured: true,
