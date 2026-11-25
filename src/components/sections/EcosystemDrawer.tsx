@@ -98,8 +98,32 @@ export function EcosystemDrawer({ isOpen, onClose }: EcosystemDrawerProps) {
                   <span className="text-cyan-400 font-medium">
                     {project.metrics}
                   </span>
-                  <div className="flex items-center gap-1.5 text-zinc-500">
-                    {project.tech.slice(0, 2).join(" • ")}
+                  <div className="flex items-center gap-2">
+                    {project.appStoreUrl && (
+                      <a
+                        href={project.appStoreUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 hover:text-white transition-colors"
+                      >
+                        <span>App Store</span>
+                        <ArrowUpRight className="h-3 w-3" />
+                      </a>
+                    )}
+                    {project.playStoreUrl && (
+                      <a
+                        href={project.playStoreUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 hover:text-white transition-colors"
+                      >
+                        <span>Google Play</span>
+                        <ArrowUpRight className="h-3 w-3" />
+                      </a>
+                    )}
+                    <span className="text-zinc-500">
+                      {project.tech.slice(0, 2).join(" • ")}
+                    </span>
                   </div>
                 </div>
               </div>

@@ -19,9 +19,9 @@ class TelemetryService {
         title: 'Swift Ride',
         codeName: 'SWIFT-TRANSIT-P2P',
         tagline: 'Decentralized Zero-Commission Urban Mobility',
-        status: 'MOBILE PRODUCTION',
+        status: 'GOOGLE PLAY STORE',
         errorRate: '0.0% Take-Rate',
-        liveUrl: 'https://dartnexuslab.com',
+        liveUrl: 'https://play.google.com/store/apps/details?id=com.dartnexuslab.swiftride',
       ),
       FlagshipModel(
         id: 'quantum-forge',

@@ -45,6 +45,9 @@ export interface EcosystemProject {
   tech: string[];
   status: string;
   iconName: string;
+  liveUrl?: string;
+  appStoreUrl?: string;
+  playStoreUrl?: string;
 }
 
 export const FLAGSHIP_PROJECTS: ProjectData[] = [
@@ -199,7 +202,7 @@ export const FLAGSHIP_PROJECTS: ProjectData[] = [
     verificationEvidence:
       "Field validated across 1,000+ simulated and live urban commute routes, ensuring 100% adherence to driver operational breakeven constraints.",
     links: {
-      liveUrl: "https://dartnexuslab.com",
+      liveUrl: "https://play.google.com/store/apps/details?id=com.dartnexuslab.swiftride",
       repoUrl: "https://github.com/aliasghar08",
       docsUrl: "https://gemini.google.com/notebook/a7a44ed4-984a-45e9-86f1-c100e0a9a5dd",
     },
@@ -385,9 +388,10 @@ export const ECOSYSTEM_PROJECTS: EcosystemProject[] = [
     description:
       "Deterministic hospital scheduling and clinician workflow orchestrator preventing double-bookings and balancing on-call emergency rotations with zero human friction.",
     metrics: "100% schedule collision free • HIPAA compliant",
-    tech: ["Next.js", "Dart / FastAPI", "PostgreSQL", "Tailwind CSS"],
-    status: "Active Deployment",
+    tech: ["iOS (App Store)", "Dart / FastAPI", "PostgreSQL", "Next.js"],
+    status: "Live on App Store",
     iconName: "CalendarClock",
+    appStoreUrl: "https://apps.apple.com/pk/app/medday-flow/id6817110679",
   },
   {
     id: "smart-roll",
