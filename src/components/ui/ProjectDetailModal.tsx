@@ -6,6 +6,7 @@ import {
   Activity, Shield, Sparkles, Copy, Check
 } from "lucide-react";
 import { GithubIcon } from "@/components/ui/GithubIcon";
+import { PlayStoreIcon, AppleIcon } from "@/components/ui/StoreIcons";
 import { ProjectData } from "@/data/projectsData";
 
 interface ProjectDetailModalProps {
@@ -209,19 +210,38 @@ export function ProjectDetailModal({ project, isOpen, onClose }: ProjectDetailMo
           </div>
 
           {project.links.liveUrl ? (
-            <a
-              href={project.links.liveUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 px-5 py-2 rounded-xl font-mono text-xs font-bold text-black transition-all shadow-lg active:scale-95 hover:brightness-110"
-              style={{
-                backgroundColor: project.accentColor,
-                boxShadow: `0 0 20px ${project.accentColor}66`,
-              }}
-            >
-              <span>Launch Environment</span>
-              <ExternalLink className="h-3.5 w-3.5" />
-            </a>
+            (() => {
+              const url = project.links.liveUrl;
+              const isPlayStore = url.includes("play.google.com");
+              const isAppStore = url.includes("apple.com") || url.includes("apps.apple.com");
+
+              let buttonLabel = "Launch Environment";
+              let icon = <ExternalLink className="h-3.5 w-3.5" />;
+
+              if (isPlayStore) {
+                buttonLabel = "Google Play Store";
+                icon = <PlayStoreIcon className="h-3.5 w-3.5" />;
+              } else if (isAppStore) {
+                buttonLabel = "Apple App Store";
+                icon = <AppleIcon className="h-3.5 w-3.5" />;
+              }
+
+              return (
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 px-5 py-2.5 rounded-xl font-mono text-xs font-bold text-black transition-all shadow-lg active:scale-95 hover:brightness-110"
+                  style={{
+                    backgroundColor: project.accentColor,
+                    boxShadow: `0 0 20px ${project.accentColor}66`,
+                  }}
+                >
+                  {icon}
+                  <span>{buttonLabel}</span>
+                </a>
+              );
+            })()
           ) : (
             <button
               onClick={onClose}

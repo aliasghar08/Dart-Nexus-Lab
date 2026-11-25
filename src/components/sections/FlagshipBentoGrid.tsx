@@ -134,8 +134,8 @@ export function FlagshipBentoGrid({ onSelectProject }: FlagshipBentoGridProps) {
                 Inspect Mobility Protocol
                 <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform text-[#00E599]" />
               </span>
-              <span className="font-mono text-[10px] text-[#00E599] bg-emerald-500/10 px-2 py-0.5 rounded">
-                MOBILE STABLE
+              <span className="font-mono text-[10px] text-[#00E599] bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/30 flex items-center gap-1">
+                <span>GOOGLE PLAY</span>
               </span>
             </div>
           </GlassCard>
@@ -239,8 +239,8 @@ export function FlagshipBentoGrid({ onSelectProject }: FlagshipBentoGridProps) {
                 Inspect Hardware-Blockchain Spec
                 <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform text-[#FFB800]" />
               </span>
-              <span className="font-mono text-[10px] text-[#FFB800] bg-amber-500/10 px-2 py-0.5 rounded">
-                HARDWARE ANCHORED
+              <span className="font-mono text-[10px] text-[#FFB800] bg-amber-500/10 px-2.5 py-1 rounded border border-amber-500/30 flex items-center gap-1">
+                <span>GOOGLE PLAY</span>
               </span>
             </div>
           </GlassCard>

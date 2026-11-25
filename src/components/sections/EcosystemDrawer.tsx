@@ -5,6 +5,8 @@ import {
   X, Store, CalendarClock, UserCheck, Cpu, Activity, ReceiptText, 
   ArrowUpRight, Layers 
 } from "lucide-react";
+import { PlayStoreIcon, AppleIcon } from "@/components/ui/StoreIcons";
+import { GithubIcon } from "@/components/ui/GithubIcon";
 import { ECOSYSTEM_PROJECTS, EcosystemProject } from "@/data/projectsData";
 
 interface EcosystemDrawerProps {
@@ -104,10 +106,10 @@ export function EcosystemDrawer({ isOpen, onClose }: EcosystemDrawerProps) {
                         href={project.repoUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded bg-white/5 border border-white/10 text-zinc-300 hover:text-white transition-colors"
+                        className="inline-flex items-center gap-1.5 text-[11px] font-mono px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 text-zinc-300 hover:text-white hover:bg-white/10 transition-colors"
                       >
+                        <GithubIcon className="h-3 w-3" />
                         <span>GitHub</span>
-                        <ArrowUpRight className="h-3 w-3" />
                       </a>
                     )}
                     {project.appStoreUrl && (
@@ -115,10 +117,10 @@ export function EcosystemDrawer({ isOpen, onClose }: EcosystemDrawerProps) {
                         href={project.appStoreUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 hover:text-white transition-colors"
+                        className="inline-flex items-center gap-1.5 text-[11px] font-mono px-2.5 py-1 rounded-lg bg-white/10 border border-white/20 text-white hover:bg-white/15 transition-colors font-semibold"
                       >
+                        <AppleIcon className="h-3 w-3" />
                         <span>App Store</span>
-                        <ArrowUpRight className="h-3 w-3" />
                       </a>
                     )}
                     {project.playStoreUrl && (
@@ -126,10 +128,10 @@ export function EcosystemDrawer({ isOpen, onClose }: EcosystemDrawerProps) {
                         href={project.playStoreUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 hover:text-white transition-colors"
+                        className="inline-flex items-center gap-1.5 text-[11px] font-mono px-2.5 py-1 rounded-lg bg-cyan-500/15 border border-cyan-500/30 text-[#00F0FF] hover:bg-cyan-500/25 transition-colors font-semibold"
                       >
+                        <PlayStoreIcon className="h-3 w-3" />
                         <span>Google Play</span>
-                        <ArrowUpRight className="h-3 w-3" />
                       </a>
                     )}
                     <span className="text-zinc-500">
